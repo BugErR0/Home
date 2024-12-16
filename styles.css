@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #00ff00;
+    background-color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #001a00;
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.2);
+}
+
+header .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #00ff00;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #00ff00;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #00cc00;
+}
+
+header .cta {
+    padding: 10px 20px;
+    background: #00ff00;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+header .cta:hover {
+    background: #001a00;
+    color: #00ff00;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: #000000;
+    color: #00ff00;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero .actions {
+    display: flex;
+    gap: 20px;
+}
+
+.hero .actions a {
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.hero .actions .btn-primary {
+    background: #00ff00;
+    color: #000;
+}
+
+.hero .actions .btn-primary:hover {
+    background: #001a00;
+    color: #00ff00;
+}
+
+.hero .actions .btn-secondary {
+    background: transparent;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+}
+
+.hero .actions .btn-secondary:hover {
+    background: #00ff00;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #001a00;
+    font-size: 0.9em;
+    color: #00ff00;
+}
+
+footer a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
