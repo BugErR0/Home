@@ -11,6 +11,11 @@ body{
 
 a{
     text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+article #projeto a {
+    display: block;
 }
 
 p {
@@ -39,11 +44,10 @@ main{
 article{
     display: flex;
     justify-content: space-evenly;
-    margin: 10px;
+    margin: 3px;
 }
 
 article #projeto{
-    padding: 5px 20px;
     border: 2px solid black;
     height: 200px;
     width: 300px;
@@ -56,6 +60,6 @@ article #projeto p{
 }
 
 footer{
-    
+    margin-top: 100%;
     background-color: rgb(95, 94, 94);
 }
