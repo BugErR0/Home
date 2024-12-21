@@ -1,6 +1,6 @@
 
 body{
-    background-color: grey;
+    background-color: rgb(78, 77, 77);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -16,10 +16,10 @@ a{
 }
 article #projeto a {
     display: block;
+    color: green;
 }
 article #projeto a:hover{
     color: black;
-    background-color: rgb(80, 80, 80,);
 }
 
 p {
@@ -30,11 +30,20 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(95, 94, 94);
-    padding: 3px;
+    padding: 3px 20px;
     margin: none;
-    font-size: 1.2vw;
-    height: 20%;
+    height: 40px;
+    border-bottom: 2px solid green;
+}
+
+.logo{
+    color: black;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.logo a{
+    color: black;
 }
 
 header nav a{
@@ -55,7 +64,6 @@ article #projeto{
     border: 2px solid black;
     height: 200px;
     width: 300px;
-    background-color: rgb(78, 77, 77);
 }
 
 article #projeto p{
@@ -64,8 +72,8 @@ article #projeto p{
 }
 
 footer{
+    border-top: 2px solid green;
     height: 1.2vx;
     margin-top: 50%;
-    background-color: rgb(95, 94, 94);
     padding: 5px 20px;
 }
