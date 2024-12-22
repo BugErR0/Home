@@ -48,10 +48,12 @@ header{
 
 header nav a{
     color: green;
+    margin: 5px;
+    font-size: 20px;
 }
 
 main{
-    font-size: 45px;
+    font-size: 5vh;
 }
 
 article{
@@ -62,8 +64,12 @@ article{
 
 article #projeto{
     border: 2px solid black;
+    height: 500px;
+    width: 350px;
+}
+
+article #projeto img{
     height: 200px;
-    width: 300px;
 }
 
 article #projeto p{
