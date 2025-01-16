@@ -14,7 +14,7 @@ function SetIndereco() {
 
 function conectar() {
     if (!socket || socket.readyState === WebSocket.CLOSED) { // <-  verificar se já tem conexão se sim vai fazer uma nova conexão
-        socket = new WebSocket(inderecoSerivdor + ":9890"); // <- faz uma nova conexão com servidor pelo indereço
+        socket = new WebSocket(inderecoSerivdor); // <- faz uma nova conexão com servidor pelo indereço
 
         // eventos do socket 
 
