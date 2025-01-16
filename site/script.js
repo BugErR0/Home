@@ -8,7 +8,7 @@ function nome() {
 };
 
 // função para definer indereço do servidor
-function indereco() {
+function SetIndereco() {
     inderecoSerivdor = document.getElementById("inderoco").value;
 };
 
