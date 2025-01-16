@@ -45,6 +45,7 @@ function conectar() {
         // quando da um erro
         socket.onerror = (error) => {
             console.error("Erro:", error);
+            window.alert("Erro:", error);
         };
 
         // quando for encerrada a comunicação
