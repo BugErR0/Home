@@ -4,12 +4,20 @@ let inderecoSerivdor; // <- variavel para guarda indereço do servidor
 
 // função para definer nome do usuario
 function nome() {
-    user = document.getElementById("nome").value;
+    if (!socket || socket.readyState === WebSocket.CLOSED) {
+        user = document.getElementById("nome").value;
+    }else{
+        window.alert("Você não pode trocar de nome quando esta conectado");
+    }
 };
 
 // função para definer indereço do servidor
 function SetIndereco() {
-    inderecoSerivdor = document.getElementById("indereco").value;
+    if (!socket || socket.readyState === WebSocket.CLOSED) {
+        inderecoSerivdor = document.getElementById("indereco").value;
+    }else{
+        window.alert("Você não pode trocar de indereço quando esta conectado");
+    }
 };
 
 function conectar() {
@@ -44,7 +52,7 @@ function conectar() {
             console.log("Conexão encerrada. Código:", event.code, "Razão:", event.reason);
         };
     } else {
-        console.log("Já está conectado");
+        window.alert("Já está conectado");
     }
 }
 
@@ -55,9 +63,9 @@ function fechar() {
         socket.send(user + " foi desconectando"); // <- para enviar dado para servidor e depois para outros clientes recebe esse dado
 
         socket.close(1000, "Conexão fechada pelo cliente."); // <- cancelar conexão com servidor
-        console.log("Enviando solicitação de fechamento para o servidor.");
+        Window.alert("Enviando solicitação de fechamento para o servidor.");
     } else {
-        console.log("Conexão já está fechada ou em processo de fechamento.");
+        window.alert("Conexão já está fechada ou em processo de fechamento.");
     }
 }
 
@@ -76,6 +84,6 @@ function msg() {
 
         document.getElementById("messagem").value = ""; // <- Limpa o campo de entrada
     } else {
-        console.log("Não é possível enviar, o WebSocket está fechado.");
+        window.alert("Não é possível enviar, o WebSocket está fechado.");
     }
 }
